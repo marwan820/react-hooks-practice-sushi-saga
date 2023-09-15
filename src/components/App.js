@@ -29,13 +29,14 @@ function App() {
         }
       });
       setSushis(updatedSushis);
-      setWallet(remainder)
-    } else { alert("You don't have enough money for sushi")
+      setWallet(remainder);
+    } else {
+      alert("You don't have enough money for sushi");
     }
   }
 
-  function handleAddmoney(amount){
-   setWallet(wallet => wallet + amount) 
+  function handleAddmoney(amount) {
+    setWallet((wallet) => wallet + amount);
   }
 
   console.log(sushis);
